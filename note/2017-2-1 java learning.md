@@ -134,11 +134,22 @@ class 子类 extends 父类
  2.request（用户请求）/response（服务器相应）
  request 常用方法
  ![enter description here][18]
+ 
+ response 即访问一个页面时该页面内的response对象只能对这次访问有效
+ sendRedirect（）页面重定向 从本质上说，相当于两次请求，URL会改变（请求重定向），不会保存上次页面的内容
+ getRequstDispatcher（）请求转发，URL不会改变，只算第一次请求
  解决传递参数乱码问题是一个使用setCharacterEnocoding()方法
  而一个就是修改Tomcat服务器中的server.xml文件，设置编码方式
  Connecter标签加上一个URIEncoding属性并设置为utf-8
- 3.session
- 4.application
+ 
+ 3.session 表示客户端和服务器的一次会话，用户浏览一个网站所花的时间（与用户的一一对应）
+session 会保存在服务器的内存中
+session 的小销毁invalidate(),session过期，服务器关闭
+
+ 4.application 
+ 常用方法，setAttribute(),getAttribute(),getServerInfo()
+ 
+ 5.page指向当前jsp页面本身
  
 表单提交方式get（明文）post（暗文）
 
