@@ -102,12 +102,12 @@ class 子类 extends 父类
  {
  	如果继承了抽象类，需要实现继承的抽象方法，要实现接口中的抽象方法。
  }如果要继承父类，继承父类必须在实现接口之前
- ![enter description here][14]
+ ![enter description here][13]
  使用方法
- ![enter description here][15]
+ ![enter description here][14]
   
   匿名内部类直接在类中使用接口
-  ![enter description here][16]
+  ![enter description here][15]
   
   **UML unified Modeling Language**
  1. 用例图 
@@ -118,7 +118,7 @@ class 子类 extends 父类
  <%%>在这个里面可以编写一些java的脚本语言
  <%!%>声明变量和声明函数
  <%=%>等式标签
- ![enter description here][17]
+ ![enter description here][16]
  
  *jsp 内置对象:(这些对象不需要new，直接可以使用）*
  1.out（JSPWriter类的实例）
@@ -133,11 +133,13 @@ class 子类 extends 父类
 
  2.request（用户请求）/response（服务器相应）
  request 常用方法
- ![enter description here][18]
+ ![enter description here][17]
  
  response 即访问一个页面时该页面内的response对象只能对这次访问有效
- sendRedirect（）页面重定向 从本质上说，相当于两次请求，URL会改变（请求重定向），不会保存上次页面的内容
+ sendRedirect（）页面重定向 从本质上说，相当于两次请求，URL会改变（请求重定向），不会保存上次页面的内容，页面跳转
  getRequstDispatcher（）请求转发，URL不会改变，只算第一次请求
+  ![enter description here][18]
+  
  解决传递参数乱码问题是一个使用setCharacterEnocoding()方法
  而一个就是修改Tomcat服务器中的server.xml文件，设置编码方式
  Connecter标签加上一个URIEncoding属性并设置为utf-8
@@ -150,6 +152,8 @@ session 的小销毁invalidate(),session过期，服务器关闭
  常用方法，setAttribute(),getAttribute(),getServerInfo()
  
  5.page指向当前jsp页面本身
+ 6.pageContext 中的getsession()可以得到当前页面中的session
+ include方法可以在页面中包含其他页面，相当于可以内嵌页面
  
 表单提交方式get（明文）post（暗文）
 
@@ -166,8 +170,9 @@ session 的小销毁invalidate(),session过期，服务器关闭
   [10]: ./images/1486628668879.jpg "1486628668879.jpg"
   [11]: ./images/1486628872175.jpg "1486628872175.jpg"
   [12]: ./images/1486709290971.jpg "1486709290971.jpg"
-  [14]: ./images/1486709259734.jpg "1486709259734.jpg"
-  [15]: ./images/1486709462783.jpg "1486709462783.jpg"
-  [16]: ./images/1486710064416.jpg "1486710064416.jpg"
-  [17]: ./images/1486559508297.jpg "1486559508297.jpg"
-  [18]: ./images/1486640970702.jpg "1486640970702.jpg"
+  [13]: ./images/1486709259734.jpg "1486709259734.jpg"
+  [14]: ./images/1486709462783.jpg "1486709462783.jpg"
+  [15]: ./images/1486710064416.jpg "1486710064416.jpg"
+  [16]: ./images/1486559508297.jpg "1486559508297.jpg"
+  [17]: ./images/1486640970702.jpg "1486640970702.jpg"
+  [18]: ./images/1486804158672.jpg "1486804158672.jpg"
