@@ -158,6 +158,21 @@ session 的小销毁invalidate(),session过期，服务器关闭
 表单提交方式get（明文）post（暗文）
 
 
+*javabeans*
+该类为public
+该类中属性要是private
+三个比较重要的标签
+jsp的动作标签
+![enter description here][19]
+1.<jsp:useBeans>
+在jsp页面中实例化或者在指定范围内使用javabeans
+grammar：<jsp:useBean id="id" class="java class name" scope="作用范围/">
+2.<jsp:getProperty>
+给已经实例化的javaBean对象的属相赋值，一共有四种形式
+![enter description here][20]
+3.<jsp:setProperty>
+
+
   [1]: ./images/1485920252353.jpg "1485920252353.jpg"
   [2]: ./images/1485920504124.jpg "1485920504124.jpg"
   [3]: ./images/1485921757421.jpg "1485921757421.jpg"
@@ -176,3 +191,5 @@ session 的小销毁invalidate(),session过期，服务器关闭
   [16]: ./images/1486559508297.jpg "1486559508297.jpg"
   [17]: ./images/1486640970702.jpg "1486640970702.jpg"
   [18]: ./images/1486804158672.jpg "1486804158672.jpg"
+  [19]: ./images/1487749665717.jpg "1487749665717.jpg"
+  [20]: ./images/1487752075305.jpg "1487752075305.jpg"
