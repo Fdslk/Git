@@ -173,6 +173,15 @@ grammar：<jsp:useBean id="id" class="java class name" scope="作用范围/">
 3.<jsp:setProperty>
 
 
+*毕设中解决的问题*
+待导入的文件：
+![enter description here][21]
+导入后出现得问题：
+![enter description here][22]
+解决方法：找到project中的classpath文件打开，就可以发现缺少的包，修改其正确路径就可以解决这个问题。
+![enter description here][23]
+
+
   [1]: ./images/1485920252353.jpg "1485920252353.jpg"
   [2]: ./images/1485920504124.jpg "1485920504124.jpg"
   [3]: ./images/1485921757421.jpg "1485921757421.jpg"
@@ -193,3 +202,6 @@ grammar：<jsp:useBean id="id" class="java class name" scope="作用范围/">
   [18]: ./images/1486804158672.jpg "1486804158672.jpg"
   [19]: ./images/1487749665717.jpg "1487749665717.jpg"
   [20]: ./images/1487752075305.jpg "1487752075305.jpg"
+  [21]: ./images/1490407998620.jpg "1490407998620.jpg"
+  [22]: ./images/1490408056522.jpg "1490408056522.jpg"
+  [23]: ./images/1490408108276.jpg "1490408108276.jpg"
