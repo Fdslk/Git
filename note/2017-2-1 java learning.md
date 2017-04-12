@@ -180,6 +180,12 @@ grammar：<jsp:useBean id="id" class="java class name" scope="作用范围/">
 ![enter description here][22]
 解决方法：找到project中的classpath文件打开，就可以发现缺少的包，修改其正确路径就可以解决这个问题。
 ![enter description here][23]
+#### 4.10
+在cmd命令中编译***.java出现错误
+![enter description here][24]
+原因：
+![enter description here][25]
+解觉方法：http://jingyan.baidu.com/article/6c67b1d6a7cda32787bb1e9c.html
 
 
   [1]: ./images/1485920252353.jpg "1485920252353.jpg"
@@ -205,3 +211,5 @@ grammar：<jsp:useBean id="id" class="java class name" scope="作用范围/">
   [21]: ./images/1490407998620.jpg "1490407998620.jpg"
   [22]: ./images/1490408056522.jpg "1490408056522.jpg"
   [23]: ./images/1490408108276.jpg "1490408108276.jpg"
+  [24]: ./images/1491788958335.jpg "1491788958335.jpg"
+  [25]: ./images/1491789021310.jpg "1491789021310.jpg"
