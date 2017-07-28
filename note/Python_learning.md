@@ -101,6 +101,22 @@ $:匹配字符串结尾
 ![enter description here][9]
 
 
+抓取web中的数据
+1.获取网页信息
+import urllib2 导入URL包
+req = urllib2.urlopen（‘url’）
+buf = req.read()将内容读取到内存缓存中
+2.进行匹配
+ma  = re.findall(r'http:.+\.jpg', buf)，匹配的列表
+3.将对应url中图片下载保存在本地
+int 0
+for url in ma:
+f = open(str(i)+'.jpg', 'w') *创建一个文件如果不存在*
+req = urllib2.open(url) *将文件下载下来*
+buf = req.read() *将文件保存在内存中的缓存中*
+f.write(buf) *写入本地文件*
+i+=1
+
   [1]: ./images/1497757118434.jpg "1497757118434.jpg"
   [2]: ./images/1500174337526.jpg "1500174337526.jpg"
   [3]: ./images/1500281317537.jpg "1500281317537.jpg"
