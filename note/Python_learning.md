@@ -44,7 +44,7 @@ grammar_cjkRuby: true
   
   python获取对象信息的方法：
   1.type()获取变量的类型
-  ex：type（123） return <type 'int'>
+  ex：type（123） return type 'int'
   2.dir()获取变量的所有属性
   3.已知一个属性名称，要获取或者设置对象的属性，就需要用getattr（）和setattr（）函数
   ![enter description here][3]
@@ -85,12 +85,28 @@ $:匹配字符串结尾
 |：匹配左右任意一个表达式
 （ab）：括号中表达式作为一个分组
 \<number>:引用编号为num的分组匹配到的字符串
-（？P<name>）:分组起一个别名
+（？P name）:分组起一个别名
 (?P=name):引用别名为那么的分组匹配字符串
+
+### *2017/7/28*
+ python正则表达式-re模块其他方法
+ 1.search 在一个字符串中查找匹配
+可以在子字符串中匹配所需要匹配的内容
+![enter description here][6]
+2.findall 找到匹配，返回所有匹配部分的列表
+![enter description here][7]
+3.sub 将字符串中匹配正则表达式的部分替换为其他值
+![enter description here][8]
+4.split 根据匹配分割字符串，返回分割字符串组成的列表
+![enter description here][9]
 
 
   [1]: ./images/1497757118434.jpg "1497757118434.jpg"
   [2]: ./images/1500174337526.jpg "1500174337526.jpg"
   [3]: ./images/1500281317537.jpg "1500281317537.jpg"
   [4]: ./images/1500283074368.jpg "1500283074368.jpg"
-  [5]: ./images/1500284562966.jpg "1500284562966.jpg"
+  [5]: ./images/1500284562966.jpg "150028562966.jpg"
+  [6]: ./images/1501232556729.jpg "1501232556729.jpg"
+  [7]: ./images/1501232860217.jpg "1501232860217.jpg"
+  [8]: ./images/1501233385192.jpg "1501233385192.jpg"
+  [9]: ./images/1501233561125.jpg "1501233561125.jpg"
