@@ -117,6 +117,32 @@ buf = req.read() *将文件保存在内存中的缓存中*
 f.write(buf) *写入本地文件*
 i+=1
 
+### *2017/7/30*
+### python 操作mysql数据库
+1.Python DB API：Python访问数据库的统一接口规范
+http://www.python.org/dev/peps/pep-0249/
+数据库连接对象connection
+数据库交互对象 cursor
+数据库异常处理 exception
+![enter description here][10]
+最后不关闭数据库连接，就会造成资源被占用的问题，使得程序的应用性能变差。
+![enter description here][11]
+在安装 MySQL-Python 出现错误： python version 2.7 required,which was not found in the registry
+解决方案：http://www.cnblogs.com/thinksasa/archive/2013/08/26/3283695.html
+在eclipse安装PyDev出现错误：
+![enter description here][12]
+重启一下  or close the automatically update 
+在eclipse中配置pydev
+http://www.cnblogs.com/Bonker/p/3584707.html
+导入错误import MySqldb
+![enter description here][13]
+解决方法：
+https://stackoverflow.com/questions/30881402/importerror-this-is-mysqldb-version-1-2-4-beta-4-but-mysql-is-version
+把之前的版本卸载掉，安装新的版本，使用pip uninstall 本机的MySqldb然后在重新安装it
+
+
+
+
   [1]: ./images/1497757118434.jpg "1497757118434.jpg"
   [2]: ./images/1500174337526.jpg "1500174337526.jpg"
   [3]: ./images/1500281317537.jpg "1500281317537.jpg"
@@ -126,3 +152,7 @@ i+=1
   [7]: ./images/1501232860217.jpg "1501232860217.jpg"
   [8]: ./images/1501233385192.jpg "1501233385192.jpg"
   [9]: ./images/1501233561125.jpg "1501233561125.jpg"
+  [10]: ./images/1501399437921.jpg "1501399437921.jpg"
+  [11]: ./images/1501399726019.jpg "1501399726019.jpg"
+  [12]: ./images/1501402396888.jpg "1501402396888.jpg"
+  [13]: ./images/1501406501265.jpg "1501406501265.jpg"
